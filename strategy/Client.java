@@ -26,6 +26,7 @@ public class Client {
         bulldogge.printArt();
         bulldogge.belle();
         bulldogge.laufe();
+        System.out.println("Ein Spaziergänger kommt vorbei.");
         bulldogge.setBellVerhalten(new LautBellen());
         bulldogge.belle();
 
@@ -33,6 +34,7 @@ public class Client {
         bulldogge.printArt();
         pudel.belle();
         pudel.laufe();
+        System.out.println("Ein Spaziergänger kommt vorbei.");
         pudel.setBellVerhalten(new LautBellen());
         pudel.belle();
 
