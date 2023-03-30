@@ -1,6 +1,6 @@
 # Design pattern excercises
 
-1. Strategy Design Pattern
+## Strategy Design Pattern
  - Alternative zur Unterklassenbildung
  - Verhalten kann zur Laufzeit geändert werden
  - Zentralisierung des Verhaltens in einer Klasse
@@ -16,7 +16,6 @@ Vorteile und Nachteile:
 | dynamisches Verhalten         |                                                           |
 | Vermeidung von Bedingungen    |                                                           |
 
-
 Strategy Pattern Termini:
 
 | Klasse                  | Strategy Teilnehmer |
@@ -27,5 +26,23 @@ Strategy Pattern Termini:
 | bellen()-Methoden       | Algorithmen         |
 
 
-2. Observer Design Pattern
+## Observer Design Pattern
+
+Vorteile:
+Verlag und Abonnenten sind entkoppelt, da der Verlag seine konkreten Abonnenten nicht kennt, dadurch:
+- problemloses Erstellen und Hinzufügen von neuen Abonnenten ohne den Verlagcode anfassen zu müssen; Abonnent muss nur Abonennteninterface implementieren (Wiederverwendbarkeit, Erweiterbarkeit)
+- Dynamik: Abonnenten können zur Design- und Laufzeit beliebig hinzugefügt und wieder entfernt werden
+- hohes Maß an Flexibilität und Dynamik gewonnen; erleichterte Wartung; Erweiterungen schnell und unkompliziert
+
+Observer Pattern Termini:
+
+| Klasse                   | Strategy Teilnehmer                                                |
+|--------------------------|--------------------------------------------------------------------|
+| FAZVerlag                | Subject (oder Observable)                                          |
+| Abonnent                 | Observer (oder Dependents)                                         |
+| verteileZeitung(Zeitung) | Methode mit der die Benachrichtigung aller Observer ausgelöst wird |
+| erhalteZeitung()         | Aktualisierungsmethode (oder Updatemethode) der Observer           |
+
+
+## Decorator Design Pattern
 

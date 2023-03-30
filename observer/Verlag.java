@@ -13,6 +13,7 @@ public class Verlag {
         abonnentenListe.remove(abonnent);
     }
 
+    public String abosZaehlen() { return String.valueOf(abonnentenListe.size()); }
     public void verteileZeitung(Zeitung zeitung){
         for (Abonnent abonnent : abonnentenListe) {
             abonnent.erhalteZeitung(zeitung);
