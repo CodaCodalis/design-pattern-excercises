@@ -4,11 +4,15 @@ public class Client {
     public static void main(String[] args) {
         SoftwareShop microsoftShop = new MicrosoftOfficeFactory();
         OfficeProgram microsoftTextProgram = microsoftShop.holeApp("Textverarbeitung");
-        microsoftTextProgram.starten();
+        microsoftTextProgram.versenden();
 
         SoftwareShop sunOpenOfficeShop = new SunOpenOfficeFactory();
         OfficeProgram sunOpenOfficeTabProgram = sunOpenOfficeShop.holeApp("Tabellenkalkulation");
-        sunOpenOfficeTabProgram.starten();
+        sunOpenOfficeTabProgram.versenden();
+
+        SoftwareShop iWorkShop = new AppleiWorkFactory();
+        OfficeProgram iWorkTabProgram = iWorkShop.holeApp("Tabellenkalkulation");
+        iWorkTabProgram.versenden();
     }
 }
 

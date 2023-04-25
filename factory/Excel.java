@@ -2,7 +2,7 @@ package factory;
 
 public class Excel extends OfficeProgram{
     @Override
-    public void starten() {
-        System.out.println("Excel startet");
+    public void versenden() {
+        System.out.println("Excel versendet");
     }
 }

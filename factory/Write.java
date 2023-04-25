@@ -2,7 +2,7 @@ package factory;
 
 public class Write extends OfficeProgram{
     @Override
-    public void starten() {
-        System.out.println("Write startet");
+    public void versenden() {
+        System.out.println("Write versendet");
     }
 }

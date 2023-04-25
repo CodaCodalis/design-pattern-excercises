@@ -2,7 +2,7 @@ package factory;
 
 public class PowerPoint extends OfficeProgram{
     @Override
-    public void starten() {
-        System.out.println("PowerPoint startet");
+    public void versenden() {
+        System.out.println("PowerPoint versendet");
     }
 }
